@@ -1,6 +1,6 @@
 import random
-from evopt.interfaces.strategies import InitializationStrategy
-from evopt.core.entities import Individual
+from evopt.backends.cpu.interfaces.strategies import InitializationStrategy
+from evopt.backends.cpu.core.entities import Individual
 
 class RandomInitializationStrategy(InitializationStrategy):
     """Initializes population with random uniform values within bounds."""

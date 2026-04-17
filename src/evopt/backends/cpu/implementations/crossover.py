@@ -1,5 +1,5 @@
-from evopt.interfaces.strategies import CrossoverStrategy
-from evopt.core.entities import Individual
+from evopt.backends.cpu.interfaces.strategies import CrossoverStrategy
+from evopt.backends.cpu.core.entities import Individual
 
 class AverageCrossoverStrategy(CrossoverStrategy):
     """Creates a child by averaging the genes of two parents."""

@@ -1,5 +1,5 @@
 import torch
-from evopt_gpu.interfaces.base import VectorizedEvaluator
+from evopt.backends.gpu.interfaces.base import VectorizedEvaluator
 
 class RocketVectorizedEvaluator(VectorizedEvaluator):
     def __init__(self, n_steps: int, dt: float, m_0: float, fuel_mass: float, g: float, k_d: float, k_m: float, device: torch.device):

@@ -1,7 +1,7 @@
 import random
-from evopt.interfaces.strategies import SelectionStrategy
-from evopt.core.entities import Individual
-from evopt.core.exceptions import EvolutionOptimizerError
+from evopt.backends.cpu.interfaces.strategies import SelectionStrategy
+from evopt.backends.cpu.core.entities import Individual
+from evopt.backends.cpu.core.exceptions import EvolutionOptimizerError
 
 class TournamentSelectionStrategy(SelectionStrategy):
     """Selects the best individual from a random subset of the population."""

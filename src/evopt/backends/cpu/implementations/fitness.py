@@ -1,4 +1,4 @@
-from evopt.interfaces.strategies import FitnessStrategy
+from evopt.backends.cpu.interfaces.strategies import FitnessStrategy
 
 class PenalizedFitnessStrategy(FitnessStrategy):
     """

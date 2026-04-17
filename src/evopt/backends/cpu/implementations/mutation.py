@@ -1,6 +1,6 @@
 import random
-from evopt.interfaces.strategies import MutationStrategy
-from evopt.core.entities import Individual
+from evopt.backends.cpu.interfaces.strategies import MutationStrategy
+from evopt.backends.cpu.core.entities import Individual
 
 class GaussianMutationStrategy(MutationStrategy):
     """Applies Gaussian noise to genes, bounded by search space limits."""
