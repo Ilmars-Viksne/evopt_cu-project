@@ -1,5 +1,5 @@
 import torch
-from evopt_gpu.selection import compute_dominance_matrix, fast_non_dominated_sort
+from evopt.backends.gpu.selection import compute_dominance_matrix, fast_non_dominated_sort
 
 def test_dominance():
     # Minimization

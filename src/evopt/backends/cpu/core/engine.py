@@ -1,8 +1,8 @@
 import logging
 import random
-from evopt.core.entities import Individual, EvolutionResult
-from evopt.core.exceptions import ConfigurationError
-from evopt.interfaces.strategies import (
+from evopt.backends.cpu.core.entities import Individual, EvolutionResult
+from evopt.backends.cpu.core.exceptions import ConfigurationError
+from evopt.backends.cpu.interfaces.strategies import (
     InitializationStrategy,
     FitnessStrategy,
     SelectionStrategy,

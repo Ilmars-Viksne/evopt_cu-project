@@ -1,9 +1,9 @@
 import torch
 import time
 import logging
-from evopt_gpu.interfaces.base import VectorizedEvaluator, VectorizedOperator, VectorizedSelector
-from evopt_gpu.logging import GPUStatsLogger
-from evopt_gpu.selection import (
+from evopt.backends.gpu.interfaces.base import VectorizedEvaluator, VectorizedOperator, VectorizedSelector
+from evopt.backends.gpu.logging import GPUStatsLogger
+from evopt.backends.gpu.selection import (
     VectorizedTournamentSelection,
     VectorizedRankCrowdingTournamentSelection,
     VectorizedNSGA2SurvivorSelection
@@ -131,7 +131,7 @@ class GPUDriver:
 
         # Final result
         if self.mode == 'moo':
-            from evopt_gpu.selection import fast_non_dominated_sort
+            from evopt.backends.gpu.selection import fast_non_dominated_sort
             fronts = fast_non_dominated_sort(objectives, violations)
             pareto_indices = fronts[0]
             return population[pareto_indices], objectives[pareto_indices], violations[pareto_indices]

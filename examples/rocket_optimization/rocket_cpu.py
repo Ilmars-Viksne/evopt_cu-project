@@ -2,12 +2,12 @@ import numpy as np
 import logging
 
 # Notice how clean the imports are now using 'evopt'
-from evopt.core.engine import EvolutionEngine
-from evopt.interfaces.strategies import FitnessStrategy
-from evopt.implementations.initialization import RandomInitializationStrategy
-from evopt.implementations.crossover import AverageCrossoverStrategy
-from evopt.implementations.mutation import GaussianMutationStrategy
-from evopt.implementations.selection import TournamentSelectionStrategy
+from evopt.backends.cpu.core.engine import EvolutionEngine
+from evopt.backends.cpu.interfaces.strategies import FitnessStrategy
+from evopt.backends.cpu.implementations.initialization import RandomInitializationStrategy
+from evopt.backends.cpu.implementations.crossover import AverageCrossoverStrategy
+from evopt.backends.cpu.implementations.mutation import GaussianMutationStrategy
+from evopt.backends.cpu.implementations.selection import TournamentSelectionStrategy
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")

@@ -1,8 +1,8 @@
 import torch
 import logging
-from evopt_gpu.driver import GPUDriver
-from evopt_gpu.examples.rocket import RocketVectorizedEvaluator
-from evopt_gpu.operators import VectorizedGaussianMutation, VectorizedSBX
+from evopt.backends.gpu.driver import GPUDriver
+from evopt.backends.gpu.examples.rocket import RocketVectorizedEvaluator
+from evopt.backends.gpu.operators import VectorizedGaussianMutation, VectorizedSBX
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")

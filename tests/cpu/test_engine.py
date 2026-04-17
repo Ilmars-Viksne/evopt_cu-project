@@ -1,7 +1,7 @@
 import pytest
-from evopt.core.engine import EvolutionEngine
-from evopt.core.entities import Individual
-from evopt.interfaces.strategies import (
+from evopt.backends.cpu.core.engine import EvolutionEngine
+from evopt.backends.cpu.core.entities import Individual
+from evopt.backends.cpu.interfaces.strategies import (
     InitializationStrategy, FitnessStrategy, SelectionStrategy,
     CrossoverStrategy, MutationStrategy
 )

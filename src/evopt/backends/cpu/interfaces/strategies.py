@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from evopt.core.entities import Individual
+from evopt.backends.cpu.core.entities import Individual
 
 class InitializationStrategy(ABC):
     """Strategy for creating the initial population."""

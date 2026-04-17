@@ -1,5 +1,5 @@
 import torch
-from evopt_gpu.interfaces.base import VectorizedOperator
+from evopt.backends.gpu.interfaces.base import VectorizedOperator
 
 class VectorizedGaussianMutation(VectorizedOperator):
     def __init__(self, mutation_rate: float, sigma: float, search_min: float, search_max: float):

@@ -1,5 +1,5 @@
 import torch
-from evopt_gpu.interfaces.base import VectorizedSelector
+from evopt.backends.gpu.interfaces.base import VectorizedSelector
 
 class VectorizedTournamentSelection(VectorizedSelector):
     def __init__(self, tournament_size: int = 2):
